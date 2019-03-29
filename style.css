@@ -4,7 +4,7 @@ html, body {
     line-height: 1.5;
     min-width: 290px;
     height: 100%;
-    overflow: auto;
+    overflow: none;
 }
 
 .nav-link ul {
@@ -73,6 +73,19 @@ height: 100%;
     padding: 0px 10px;
   }
   
+
+  .images {
+width: 100%;
+  }
+
+  .images .img1 {
+      width: 49%;
+      float: left;
+  }
+  .images .img2 {
+    width: 49%;
+    float: right;
+}
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .nav-link {padding-top: 15px;}
