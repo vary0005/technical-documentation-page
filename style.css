@@ -1,3 +1,82 @@
-body {
-    color: blue;
+html, body {
+    font-family: arial;
+    background-color: #FFF7F8;
+    line-height: 1.5;
+    min-width: 290px;
+    height: 100%;
+    overflow: auto;
 }
+
+.nav-link ul {
+    list-style-type: none;
+}
+
+#navbar {
+    position:fixed;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    z-index: 1000;
+    min-width:290px;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:100%;
+    border-right:solid;
+    border-color:rgba(0,22,22,0.4);
+    background-color: #8C5E58;
+}
+
+header {
+    color: black;
+    font-size: 30px;
+  margin:10px;
+  text-align:center;
+  font-size:1.8em;
+  font-weight:thin;
+}
+
+a.nav-link {
+color: black;
+height: 100%;
+}
+
+.nav-link { 
+    height: 450px; /* Full-height: remove this if you want "auto" height */
+    margin-bottom: -5000px;
+    padding-bottom: -5000px;
+    width: 160px; /* Set the width of the sidebar */ /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #8C5E58; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .nav-link li {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #A9F0D1;
+    display: inline-block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .nav-link li:hover {
+    color: #FF7E6B;
+  }
+  
+  /* Style page content */
+  .main-section {
+    margin-left: 320px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .nav-link {padding-top: 15px;}
+    .nav-link li {font-size: 18px;}
+  }
+
+ /* */
