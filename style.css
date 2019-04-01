@@ -129,9 +129,6 @@ margin:10px;
   border-radius: 10px;
 }
 
-.colorful p {
-  line-height: 2rem;
-}
 #orange{
   background: linear-gradient(rgba(255,138,0,.2),#fff);
   padding: 10px;
@@ -139,6 +136,16 @@ margin:10px;
 
 }
 
+.purple3 {
+  color: black;
+  background: linear-gradient(rgba(156,39,176,.2),#fff);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.purple3 img {
+  margin: 0px 100px 40px 100px;
+}
 
 
 code .customcode {

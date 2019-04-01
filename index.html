@@ -106,6 +106,28 @@
                            flex-flow&#58;&nbsp;&#60;'flex-direction'&#62;&nbsp;&#124;&#124;&nbsp;&#60;'flex-wrap'&#62;
                 </code>
                      </div>
+                     <div class="purple3">
+                        <p><strong>justify-content</strong></p>
+                        <img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg">
+                        <p>This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</p>
+                        <code class="customcode">  css<br>   
+                          .container&nbsp;&#123;<br>
+                     &nbsp;&nbsp;&nbsp;justify-content	&#58;&nbsp; flex-start&nbsp;&#124;&nbsp;flex-end&nbsp;&#124;&nbsp;center&nbsp;&#124;&nbsp;space-between&nbsp;&#124;&nbsp;space-around&nbsp;&#124;&nbsp;space-evenly&#59; <br>                         
+                   &#125;
+               </code>
+               <div class="colorful">
+                  <p
+                  ><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-start</span> (default): items are packed toward the start line
+                  <br> 
+                  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-end</span>: items are packed toward the end line<br>
+                  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">center</span>: items are centered along the line</a><br>
+                  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">space-between</span>: items are evenly distributed in the line; first item is on the start line, last item on the end line</a><br>
+                  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">space-around</span>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</a><br>
+                  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">space-evenly</span>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</a>
+  
+                
+                        </div>
+                     </div>
                   </div>
                   <div class="column2">
                     <img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg">
@@ -152,6 +174,16 @@
    &#125;
 </code>
 <p>If set to <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">0</span>, the extra space around content isn't factored in. If set to <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">auto</span>, the extra space is distributed based on its <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-grow</span> value. <a href="https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg">See this graphic.</a></p>
+</div>
+<div id="orange">
+    <p><strong>flex</strong></p>
+    <p>This is the shorthand for <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-grow, </span><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-shrink</span> and <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-basis</span>combined. The second and third parameters (<span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-shrink</span> and<span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-basis</span>are optional. Default is <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">0 1 auto</span>.</p>
+    <code class="customcode">css<br>  
+        .item&nbsp;&#123;<br>
+   &nbsp;&nbsp;&nbsp;flex&#58;&nbsp;none&nbsp;&#124; [&nbsp;&#60;'flex-grow'&#62;&nbsp;&#60;'flex-shrink'&#62;?&nbsp;&#124;&#124;&nbsp;'flex-basis'&#62; ]<br>                         
+ &#125;
+</code>
+<p><strong>It is recommended that you use this shorthand property</strong> rather than set the individual properties. The short hand sets the other values intelligently.</p>
 </div>
                   </div>
                 </div>
