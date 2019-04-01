@@ -16,7 +16,7 @@
           <ul>  
               <a class="nav-link" href="#Background" rel="Internal"><li>Background</li></a>
               <a class="nav-link" href="#Basics_and_Terminology" rel="Internal"><li>Basics and Terminology</li></a>
-              <a class="nav-link" href="#Display" rel="Internal"><li>Display</li></a>
+              <a class="nav-link" href="#From_The_Beginning" rel="Internal"><li>From The Beginning</li></a>
               <a class="nav-link" href="#Background" rel="Internal"><li>Background</li></a>
             
               </ul>
@@ -43,20 +43,60 @@
                       <li><strong>cross-start | cross-end</strong> - Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
                       <li><strong>cross size</strong> - The width or height of a flex item, whichever is in the cross dimension, is the item's cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.</li>
                   </ul>
-                  <div class="container">
-                        <div style="float:left;width:49%">
-                            <img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg">
-                        </div>
-                        <div style="float:right;width:49%">
-                            <img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg">
-                        </div>
                     </div>
           </section>
         
-        <section class="main-section" id="Display">
-                <header></header>
-          <p><p>
-          <p><p>
+        <section class="main-section" id="From_The_Beginning">
+                <header>From The Beginning</header>
+                <div class="row">
+                  <div class="column1">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg">
+                    
+                    <p style="text-align:center; font-weight:bold; font-size: 1.6rem">Properties for the Parent<br>(flex container)</p>
+                      
+                      <div class="purple1">
+                        <p1>&nbsp;&nbsp;<strong>display</strong></p1>
+                        <p>&nbsp;&nbsp;This defines a flex container; inline or block depending on the given &nbsp;&nbsp;value. It enables a flex context for all its direct children.</p>                     
+                        <code class="customcode">   
+                                 .container&nbsp;&#123;<br>
+                            &nbsp;&nbsp;&nbsp;display	&#58;&nbsp; flex&#59;&nbsp;&#47;&#42; or inline-flex &#42;&#47;<br>                         
+                        	&#125;
+                      </code>
+                      <p>&nbsp;&nbsp;Note that CSS columns have no effect on a flex container.</p>
+                      </div>
+                     <div class="purple2">
+                       <p><strong>flex-direction</strong></p>
+                       <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg">
+                       <p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</p>
+                       <code class="customcode">   
+                          .container&nbsp;&#123;<br>
+                     &nbsp;&nbsp;&nbsp;flex-direction	&#58;&nbsp; row&nbsp;&#124;&nbsp;row-reverse&nbsp;&#124;&nbsp;column&nbsp;&#124;&nbsp;column-reverse&#59; <br>                         
+                   &#125;
+               </code>
+               <div class="colorful">
+               <p
+               ><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">row</span> (default): left to right in <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">ltr</span>; right to left in <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">rtl</span><br>
+               <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">row-reverse</span>: right to left in <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">ltr</span>; left to right in <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">rtl</span><br>
+               <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">column</span>: same as <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">row</span> but top to bottom<br>
+               <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">column-reverse</span>: same as <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">row-reverse</span> but bottom to top</p>
+                     </div>
+                    </div>
+                  </div>
+                  <div class="column2">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg">
+                    <p style="text-align:center; font-weight:bold; font-size: 1.6rem">Properties for the Children<br>(flex items)</p>
+                    <div id="image">
+                      <img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg">
+                    
+                    <p>By default, flex items are laid out in the source order. However, the <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">order</span> property controls the order in which they appear in the flex container.</p>
+                    <code class="customcode">   
+                        .container&nbsp;&#123;<br>
+                   &nbsp;&nbsp;&nbsp;display	&#58;&nbsp; flex&#59;&nbsp;&#47;&#42; or inline-flex &#42;&#47;<br>                         
+                 &#125;
+             </code>
+            </div>
+                  </div>
+                </div>
       </section>
             <section class="main-section" id="j_query">
               <header></header>

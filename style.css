@@ -1,5 +1,5 @@
 html, body {
-    font-family: arial;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     background-color: #FFF7F8;
     line-height: 1.5;
     min-width: 290px;
@@ -23,7 +23,7 @@ html, body {
     height:100%;
     border-right:solid;
     border-color:rgba(0,22,22,0.4);
-    background-color: #8C5E58;
+    background-color: black;
 }
 
 header {
@@ -48,7 +48,7 @@ height: 100%;
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #8C5E58; /* Black */
+    background-color: black; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
@@ -58,13 +58,13 @@ height: 100%;
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #A9F0D1;
+    color: white;
     display: inline-block;
   }
   
   /* When you mouse over the navigation links, change their color */
   .nav-link li:hover {
-    color: #FF7E6B;
+    color: orange;
   }
   
   /* Style page content */
@@ -74,18 +74,85 @@ height: 100%;
   }
   
 
-  .images {
-width: 100%;
-  }
-
-  .images .img1 {
-      width: 49%;
-      float: left;
-  }
-  .images .img2 {
+  .column1 {
+    float: left;
     width: 49%;
+  }
+  
+  .column2 {
     float: right;
+    width: 49%;
+    
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+
+.column1, .column2 {
+  font-size: 1rem;
 }
+
+
+ppp {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+code {
+  display:block;
+  text-align: left;
+position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color:#001628;
+padding:15px;
+margin:10px;
+  border-radius:5px;
+  color: white;
+}
+
+.purple1 {
+  color: black;
+  background: linear-gradient(rgba(156,39,176,.2),#fff);
+  padding: 10px;
+  border-radius: 10px;
+}
+.purple2 {
+  color: black;
+  background: linear-gradient(rgba(156,39,176,.2),#fff);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.colorful p {
+  line-height: 2rem;
+}
+#image{
+  background: linear-gradient(rgba(255,138,0,.2),#fff);
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+code .customcode {
+  position: relative;
+  background-color: var(--silver);
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .nav-link {padding-top: 15px;}
