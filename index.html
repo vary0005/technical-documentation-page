@@ -16,7 +16,7 @@
           <ul>  
               <a class="nav-link" href="#Background" rel="Internal"><li>Background</li></a>
               <a class="nav-link" href="#Basics_and_Terminology" rel="Internal"><li>Basics and Terminology</li></a>
-              <a class="nav-link" href="#From_The_Beginning" rel="Internal"><li>From The Beginning</li></a>
+              <a class="nav-link" href="#Flex_Properties" rel="Internal"><li>Flex Properties</li></a>
               <a class="nav-link" href="#Background" rel="Internal"><li>Background</li></a>
             
               </ul>
@@ -46,8 +46,8 @@
                     </div>
           </section>
         
-        <section class="main-section" id="From_The_Beginning">
-                <header>From The Beginning</header>
+        <section class="main-section" id="Flex_Properties">
+                <header>Flex Properties</header>
                 <div class="row">
                   <div class="column1">
                     <img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg">
@@ -55,9 +55,9 @@
                     <p style="text-align:center; font-weight:bold; font-size: 1.6rem">Properties for the Parent<br>(flex container)</p>
                       
                       <div class="purple1">
-                        <p1>&nbsp;&nbsp;<strong>display</strong></p1>
-                        <p>&nbsp;&nbsp;This defines a flex container; inline or block depending on the given &nbsp;&nbsp;value. It enables a flex context for all its direct children.</p>                     
-                        <code class="customcode">   
+                        <p1><strong>display</strong></p1>
+                        <p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</p>                     
+                        <code class="customcode">   css<br>  
                                  .container&nbsp;&#123;<br>
                             &nbsp;&nbsp;&nbsp;display	&#58;&nbsp; flex&#59;&nbsp;&#47;&#42; or inline-flex &#42;&#47;<br>                         
                         	&#125;
@@ -68,7 +68,7 @@
                        <p><strong>flex-direction</strong></p>
                        <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg">
                        <p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</p>
-                       <code class="customcode">   
+                       <code class="customcode">  css<br>   
                           .container&nbsp;&#123;<br>
                      &nbsp;&nbsp;&nbsp;flex-direction	&#58;&nbsp; row&nbsp;&#124;&nbsp;row-reverse&nbsp;&#124;&nbsp;column&nbsp;&#124;&nbsp;column-reverse&#59; <br>                         
                    &#125;
@@ -81,20 +81,78 @@
                <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">column-reverse</span>: same as <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">row-reverse</span> but bottom to top</p>
                      </div>
                     </div>
+                    <div class="purple2">
+                        <p><strong>flex-wrap</strong></p>
+                        <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg">
+                        <p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</p>
+                        <code class="customcode">  css<br>   
+                           .container&nbsp;&#123;<br>
+                      &nbsp;&nbsp;&nbsp;flex-wrap	&#58;&nbsp; nowrap&nbsp;&#124;&nbsp;wrap&nbsp;&#124;&nbsp;wrap-reverse&#59; <br>                         
+                    &#125;
+                </code>
+                <div class="colorful">
+                <p
+                ><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">nowrap</span> (default): all flex items will be on one line<br> 
+                <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">wrap</span>: flex items will wrap onto multiple lines, from top to bottom.<br>
+                <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">wrap-reverse</span>: flex items will wrap onto multiple lines from bottom to top.<br>There are some  <a href="https://css-tricks.com/almanac/properties/f/flex-wrap/">visual demos of flex-wrap here.</a>
+
+              
+                      </div>
+                     </div>
+                     <div class="purple2">
+                        <p><strong>flex-flow (Applies to: parent flex container element)</strong></p>
+                        <p>This is a shorthand <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-direction</span> and <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-wrap</span> properties, which together define the flex container's main and cross axes. Default is <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">row nowrap</span>.</p>
+                        <code class="customcode">  css<br>   
+                           flex-flow&#58;&nbsp;&#60;'flex-direction'&#62;&nbsp;&#124;&#124;&nbsp;&#60;'flex-wrap'&#62;
+                </code>
+                     </div>
                   </div>
                   <div class="column2">
                     <img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg">
                     <p style="text-align:center; font-weight:bold; font-size: 1.6rem">Properties for the Children<br>(flex items)</p>
-                    <div id="image">
+                    <div id="orange">
                       <img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg">
                     
                     <p>By default, flex items are laid out in the source order. However, the <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">order</span> property controls the order in which they appear in the flex container.</p>
-                    <code class="customcode">   
-                        .container&nbsp;&#123;<br>
-                   &nbsp;&nbsp;&nbsp;display	&#58;&nbsp; flex&#59;&nbsp;&#47;&#42; or inline-flex &#42;&#47;<br>                         
+                    <code class="customcode">css<br>  
+                        .item&nbsp;&#123;<br>
+                   &nbsp;&nbsp;&nbsp;order&nbsp;&#58;&nbsp;&#60;integer&#62;&#59;&nbsp;&#47;&#42; default is 0 &#42;&#47;<br>                         
                  &#125;
              </code>
             </div>
+            <div id="orange">
+              <p><strong>flex-grow</strong></p>
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg">
+              
+              <p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+              <p>If all items have <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-grow</span> set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).</p>
+              <code class="customcode">css<br>  
+                  .item&nbsp;&#123;<br>
+             &nbsp;&nbsp;&nbsp;flex-grow&nbsp;&#58;&nbsp;&#60;number&#62;&#59;&nbsp;&#47;&#42; default 0 &#42;&#47;<br>                         
+           &#125;
+       </code>
+       <p>Negative numbers are invalid.</p>
+      </div>
+      <div id="orange">
+          <p><strong>flex-shrink</strong></p>
+          <p>This defines the ability for a flex item to shrink if necessary.</p>
+          <code class="customcode">css<br>  
+              .item&nbsp;&#123;<br>
+         &nbsp;&nbsp;&nbsp;flex-shrink&nbsp;&#58;&nbsp;&#60;number&#62;&#59;&nbsp;&#47;&#42; default 1 &#42;&#47;<br>                         
+       &#125;
+   </code>
+   <p>Negative numbers are invalid.</p>
+  </div>
+  <div id="orange">
+      <p><strong>flex-basis</strong></p>
+      <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">auto</span> keyword means "look at my width or height property" (which was temporarily done by the <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">main-size</span> keyword until deprecated). The <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">content</span> keyword means "size it based on the item's content" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">max-content</span>, <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">min-content</span>, and <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">fit-content</span> do.</p>
+      <code class="customcode">css<br>  
+          .item&nbsp;&#123;<br>
+     &nbsp;&nbsp;&nbsp;flex-basis&nbsp;&#58;&nbsp;&#60;length&#62;&nbsp;&#124;&nbsp;auto&#59;&nbsp;&#47;&#42; default auto &#42;&#47;<br>                         
+   &#125;
+</code>
+<p>If set to <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">0</span>, the extra space around content isn't factored in. If set to <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">auto</span>, the extra space is distributed based on its <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-grow</span> value. <a href="https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg">See this graphic.</a></p>
+</div>
                   </div>
                 </div>
       </section>

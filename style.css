@@ -23,7 +23,7 @@ html, body {
     height:100%;
     border-right:solid;
     border-color:rgba(0,22,22,0.4);
-    background-color: black;
+    background-color: #001628;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
 }
 
 a.nav-link {
-color: black;
+color: #001628;
 height: 100%;
 }
 
@@ -48,7 +48,7 @@ height: 100%;
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: black; /* Black */
+    background-color: #001628; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
@@ -132,12 +132,14 @@ margin:10px;
 .colorful p {
   line-height: 2rem;
 }
-#image{
+#orange{
   background: linear-gradient(rgba(255,138,0,.2),#fff);
   padding: 10px;
   border-radius: 10px;
 
 }
+
+
 
 code .customcode {
   position: relative;
@@ -152,7 +154,10 @@ code .customcode {
   overflow: auto;
 }
 
+p {
 
+margin:10px;
+}
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .nav-link {padding-top: 15px;}
