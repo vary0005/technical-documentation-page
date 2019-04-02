@@ -73,7 +73,16 @@ height: 100%;
     padding: 0px 10px;
   }
   
+  section#Background.main-section {
+    background: linear-gradient(rgba(185, 86, 202, 0.2),#fff);
+    border-radius: 10px;
+  }
+  
 
+  section#Basics_and_Terminology.main-section {
+    background: linear-gradient(rgba(219, 185, 146, 0.2),#fff);
+    border-radius: 10px;
+  }
   .column1 {
     float: left;
     width: 49%;
