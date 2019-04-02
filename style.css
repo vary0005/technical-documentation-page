@@ -32,7 +32,6 @@ header {
   margin:10px;
   text-align:center;
   font-size:1.8em;
-  font-weight:thin;
 }
 
 a.nav-link {
@@ -62,14 +61,14 @@ height: 100%;
     display: inline-block;
   }
   
-  /* When you mouse over the navigation links, change their color */
+  /* Change link color on hover */
   .nav-link li:hover {
     color: orange;
   }
   
   /* Style page content */
   .main-section {
-    margin-left: 320px; /* Same as the width of the sidebar */
+    margin-left: 320px; 
     padding: 0px 10px;
   }
   
