@@ -133,9 +133,28 @@ margin:10px;
   background: linear-gradient(rgba(255,138,0,.2),#fff);
   padding: 10px;
   border-radius: 10px;
-
 }
 
+#Flex_Grow {
+  width: 49%;
+}
+section#Flex_Grow.main-section {
+  background: linear-gradient(rgba(255,138,0,.2),#fff);
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+  width: 100%;
+  padding: 0;
+}
+
+section#Flex_Basis.main-section {
+  background: linear-gradient(rgba(255,138,0,.2),#fff);
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+  width: 100%;
+  padding: 0;
+}
 .purple3 {
   color: black;
   background: linear-gradient(rgba(156,39,176,.2),#fff);
@@ -172,3 +191,92 @@ margin:10px;
   }
 
  /* */
+
+ @media only screen and (max-width: 600px) {
+  body {
+    color: black;
+  }
+ }
+
+ 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .purple3 {
+    color: black;
+    background: linear-gradient(rgba(156,39,176,.2),#fff);
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  #navbar {
+    position:fixed;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    z-index: 1000;
+    min-width:150px;
+    top:0px;
+    left:0px;
+    width:30px;
+    height:100%;
+    border-right:solid;
+    border-color:rgba(0,22,22,0.4);
+    background-color: #001628;
+}
+
+header {
+    color: black;
+    font-size: 30px;
+  margin:10px;
+  text-align:center;
+  font-size:1.8em;
+  font-weight:thin;
+}
+
+a.nav-link {
+color: #001628;
+height: 100%;
+}
+
+.nav-link { 
+    height: 450px; /* Full-height: remove this if you want "auto" height */
+    margin-bottom: -5000px;
+    padding-bottom: -5000px;
+    width: 160px; /* Set the width of the sidebar */ /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #001628; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .nav-link li {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+  }
+
+   /* Style page content */
+   .main-section {
+    margin-left: 150px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  .column1 {
+    float: none;
+    width: 100%;
+  }
+  
+  .column2 {
+    float: none;
+    width: 100%;
+  
+}
+.purple3 img {
+  margin: 0px 20px 10px 20px;
+}
+
+}

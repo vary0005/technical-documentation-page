@@ -17,7 +17,8 @@
               <a class="nav-link" href="#Background" rel="Internal"><li>Background</li></a>
               <a class="nav-link" href="#Basics_and_Terminology" rel="Internal"><li>Basics and Terminology</li></a>
               <a class="nav-link" href="#Flex_Properties" rel="Internal"><li>Flex Properties</li></a>
-              <a class="nav-link" href="#Background" rel="Internal"><li>Background</li></a>
+              <a class="nav-link" href="#Flex_Grow" rel="Internal"><li>Flex-Grow</li></a>
+              <a class="nav-link" href="#Flex_Basis" rel="Internal"><li>Flex-Basis</li></a>
             
               </ul>
               </nav>
@@ -142,8 +143,8 @@
                  &#125;
              </code>
             </div>
-            <div id="orange">
-              <p><strong>flex-grow</strong></p>
+            <section class="main-section" id="Flex_Grow">
+              <header>Flex Grow</header>
                 <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg">
               
               <p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
@@ -154,7 +155,7 @@
            &#125;
        </code>
        <p>Negative numbers are invalid.</p>
-      </div>
+    </section>
       <div id="orange">
           <p><strong>flex-shrink</strong></p>
           <p>This defines the ability for a flex item to shrink if necessary.</p>
@@ -165,8 +166,8 @@
    </code>
    <p>Negative numbers are invalid.</p>
   </div>
-  <div id="orange">
-      <p><strong>flex-basis</strong></p>
+  <section class="main-section" id="Flex_Basis">
+  <header>Flex Basis</header>
       <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">auto</span> keyword means "look at my width or height property" (which was temporarily done by the <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">main-size</span> keyword until deprecated). The <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">content</span> keyword means "size it based on the item's content" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">max-content</span>, <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">min-content</span>, and <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">fit-content</span> do.</p>
       <code class="customcode">css<br>  
           .item&nbsp;&#123;<br>
@@ -174,7 +175,8 @@
    &#125;
 </code>
 <p>If set to <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">0</span>, the extra space around content isn't factored in. If set to <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">auto</span>, the extra space is distributed based on its <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-grow</span> value. <a href="https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg">See this graphic.</a></p>
-</div>
+
+</section>
 <div id="orange">
     <p><strong>flex</strong></p>
     <p>This is the shorthand for <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-grow, </span><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-shrink</span> and <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-basis</span>combined. The second and third parameters (<span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-shrink</span> and<span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">flex-basis</span>are optional. Default is <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">0 1 auto</span>.</p>
@@ -188,19 +190,8 @@
                   </div>
                 </div>
       </section>
-            <section class="main-section" id="j_query">
-              <header></header>
-              <p><p>
-              <p><p>
-          </section>
-            <section class="main-section" id="ja_sc">
-              <header></header>
-              <p><p>
-              <p><p>
-          </section>
+     
          </main>
-             
-    </div>
 </body>
 </html>
 
